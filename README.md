@@ -1,7 +1,10 @@
 # clase_01
 ## Repaso Java
+
 [Descarga documento](./recursos/ACT-Clase%201%20-%20Repaso%20Java.pdf)
-Validador de Inscripciones según Correlatividades
+
+## Validador de Inscripciones según Correlatividades
+
 Nos han solicitado el diseño y el desarrollo de un Validador de Inscripciones según materias
 correlativas.
 En las carreras terciarias y universitarias, para ordenar el plan de estudios y asegurar que
@@ -16,5 +19,6 @@ podrán utilizar, además de la clase Inscripción, la clase Materia y Alumno; s
 * Diseñar una solución en el Paradigma Orientado a Objetos y comunicar la solución
 mediante un Diagrama de Clases.
 * Codificar la solución (lenguaje a elección o pseudo-código)
-[!diagrama uml](./UMLDiagrams/Class%20Diagrams/modelo%202023.10.29%2017-20-09.cdg)
+
+[!diagrama uml](./recursos/uml.JPG)
 
