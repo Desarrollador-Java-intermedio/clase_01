@@ -20,5 +20,5 @@ podrán utilizar, además de la clase Inscripción, la clase Materia y Alumno; s
 mediante un Diagrama de Clases.
 * Codificar la solución (lenguaje a elección o pseudo-código)
 
-[!diagrama uml](./recursos/uml.JPG)
+![diagrama uml](./recursos/uml.JPG)
 
