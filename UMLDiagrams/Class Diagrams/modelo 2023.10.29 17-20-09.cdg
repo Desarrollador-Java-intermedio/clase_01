@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="modelo">
+  <ClassDiagramComponents>
+    <Class name="Alumno" package="modelo" visibility="public" xPosition="55.0" yPosition="467.0">
+      <Fields>
+        <Field name="idAlumno" type="Long" visibility="private"/>
+        <Field name="apellido" type="String" visibility="private"/>
+        <Field name="inscrpciones" type="List&lt;Inscripcion&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Long" name="idAlumno"/>
+          <Argument type="String" name="apellido"/>
+          <Argument type="List&lt;Inscripcion&gt;" name="inscrpciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdAlumno" returnType="Long" visibility="public"/>
+        <Method name="setIdAlumno" returnType="void" visibility="public">
+          <Argument type="Long" name="idAlumno"/>
+        </Method>
+        <Method name="getApellido" returnType="String" visibility="public"/>
+        <Method name="setApellido" returnType="void" visibility="public">
+          <Argument type="String" name="apellido"/>
+        </Method>
+        <Method name="getInscrpciones" returnType="List&lt;Inscripcion&gt;" visibility="public"/>
+        <Method name="setInscrpciones" returnType="void" visibility="public">
+          <Argument type="List&lt;Inscripcion&gt;" name="inscrpciones"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Inscripcion" package="modelo" visibility="public" xPosition="285.0" yPosition="21.0">
+      <Fields>
+        <Field name="alumno" type="Alumno" visibility="private"/>
+        <Field name="materia" type="Materia" visibility="private"/>
+        <Field name="aprobada" type="Boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Alumno" name="alumno"/>
+          <Argument type="Materia" name="materia"/>
+          <Argument type="Boolean" name="aprobada"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getAlumno" returnType="Alumno" visibility="public"/>
+        <Method name="setAlumno" returnType="void" visibility="public">
+          <Argument type="Alumno" name="alumno"/>
+        </Method>
+        <Method name="getMateria" returnType="Materia" visibility="public"/>
+        <Method name="setMateria" returnType="void" visibility="public">
+          <Argument type="Materia" name="materia"/>
+        </Method>
+        <Method name="getAprobada" returnType="Boolean" visibility="public"/>
+        <Method name="setAprobada" returnType="void" visibility="public">
+          <Argument type="Boolean" name="aprobada"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Materia" package="modelo" visibility="public" xPosition="558.0" yPosition="495.0">
+      <Fields>
+        <Field name="idMateria" type="Long" visibility="private"/>
+        <Field name="correlativas" type="List&lt;Materia&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="Long" name="idMateria"/>
+          <Argument type="List&lt;Materia&gt;" name="correlativas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdMateria" returnType="Long" visibility="public"/>
+        <Method name="setIdMateria" returnType="void" visibility="public">
+          <Argument type="Long" name="idMateria"/>
+        </Method>
+        <Method name="getCorrelativas" returnType="List&lt;Materia&gt;" visibility="public"/>
+        <Method name="setCorrelativas" returnType="void" visibility="public">
+          <Argument type="List&lt;Materia&gt;" name="correlativas"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="modelo.Materia" target="modelo.Materia" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="inscrpciones" source="modelo.Alumno" target="modelo.Inscripcion" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Inscripcion&gt;"/>
+    <HasRelation name="alumno" source="modelo.Inscripcion" target="modelo.Alumno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="correlativas" source="modelo.Materia" target="modelo.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Materia&gt;"/>
+    <UseRelation source="modelo.Inscripcion" target="modelo.Alumno" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="materia" source="modelo.Inscripcion" target="modelo.Materia" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="modelo.Alumno" target="modelo.Inscripcion" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="modelo.Inscripcion" target="modelo.Materia" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
