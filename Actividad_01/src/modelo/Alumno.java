@@ -1,29 +1,29 @@
 package modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Alumno {
-     private Long idAlumno;
+
+    private String nombre;
     private String apellido;
-    List <Inscripcion> inscrpciones;
+    List<Materia> materiasAprobadas;
 
     public Alumno() {
     }
 
-    public Alumno(Long idAlumno, String apellido, List<Inscripcion> inscrpciones) {
-        this.idAlumno = idAlumno;
+    public Alumno(String nombre, String apellido) {
+        this.nombre = nombre;
         this.apellido = apellido;
-        this.inscrpciones = inscrpciones;
+        this.materiasAprobadas = new ArrayList<>();
     }
 
-    
-
-    public Long getIdAlumno() {
-        return idAlumno;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setIdAlumno(Long idAlumno) {
-        this.idAlumno = idAlumno;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellido() {
@@ -34,16 +34,12 @@ public class Alumno {
         this.apellido = apellido;
     }
 
-    public List<Inscripcion> getInscrpciones() {
-        return inscrpciones;
+    public List<Materia> getMateriasAprobadas() {
+        return materiasAprobadas;
     }
 
-    public void setInscrpciones(List<Inscripcion> inscrpciones) {
-        this.inscrpciones = inscrpciones;
+    public void agregarMateria(Materia materia) {
+        this.materiasAprobadas.add(materia);
     }
-
-    @Override
-    public String toString() {
-        return "Materia{" + "idAlumno=" + idAlumno + ", apellido=" + apellido + ", inscrpciones=" + inscrpciones + '}';
-    }
+    
 }

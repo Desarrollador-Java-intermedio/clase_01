@@ -1,7 +1,9 @@
-
 package modelo;
 
+import javax.swing.JOptionPane;
+
 public class Inscripcion {
+
     private Alumno alumno;
     private Materia materia;
     private Boolean aprobada;
@@ -9,10 +11,10 @@ public class Inscripcion {
     public Inscripcion() {
     }
 
-    public Inscripcion(Alumno alumno, Materia materia, Boolean aprobada) {
+    public Inscripcion(Alumno alumno, Materia materia) {
         this.alumno = alumno;
         this.materia = materia;
-        this.aprobada = aprobada;
+        this.aprobada = false;
     }
 
     public Alumno getAlumno() {
@@ -39,10 +41,20 @@ public class Inscripcion {
         this.aprobada = aprobada;
     }
 
-    @Override
-    public String toString() {
-        return "Inscripcion{" + "alumno=" + alumno + ", materia=" + materia + ", aprobada=" + aprobada + '}';
+    public void estaAprobada() {
+        final boolean totalCorrelativas = materia.getCorrelativas() == 0;
+        final boolean comparacionAprobadasCorrelativas = materia.getCorrelativas() == alumno.getMateriasAprobadas().size();
+
+        if (totalCorrelativas || comparacionAprobadasCorrelativas) {
+            this.setAprobada(true);
+        }
     }
-    
-    
+
+    public void imprimirCartelito() {
+        if (aprobada) {
+            System.out.println("Inscripcion Aprobada");
+        }else{
+            System.out.println("Inscripcion Rechazada");
+        }
+    }
 }

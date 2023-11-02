@@ -1,40 +1,40 @@
-
 package modelo;
 
-import java.util.List;
-
 public class Materia {
-   private Long idMateria;
-    private List<Materia> correlativas;
+
+    private String nombre;
+    private int correlativas;
 
     public Materia() {
     }
 
-    public Materia(Long idMateria, List<Materia> correlativas) {
-        this.idMateria = idMateria;
+    public Materia(String nombre, int correlativas) {
+        this.nombre = nombre;
         this.correlativas = correlativas;
     }
 
-    public Long getIdMateria() {
-        return idMateria;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setIdMateria(Long idMateria) {
-        this.idMateria = idMateria;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public List<Materia> getCorrelativas() {
+    public int getCorrelativas() {
         return correlativas;
     }
 
-    public void setCorrelativas(List<Materia> correlativas) {
+    public void setCorrelativas(int correlativas) {
         this.correlativas = correlativas;
     }
 
     @Override
     public String toString() {
-        return "Materia{" + "idMateria=" + idMateria + ", correlativas=" + correlativas + '}';
+        return "Materia{" + "nombre=" + nombre + ", correlativas=" + correlativas + '}';
     }
+
+   
+
     
-    
-    }
+}

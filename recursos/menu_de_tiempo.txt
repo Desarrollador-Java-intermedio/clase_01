@@ -1,0 +1,18 @@
+00:00 ⭐Clasificacion del Lenguaje
+05:00 ⭐Sintaxis Básica
+11:00  -Variables
+12:00  -Operadores y Expresiones
+14:20  -Booleanos
+20:00  -Condicionales
+29:00  -Bucles
+35:00 ⭐Metodos Main
+40:50 ⭐Paradigma Orientado a Objetos
+46:00  -Clase
+56:40  -Objetos
+58:10  -Herencia
+01:10:00  -Interfaces
+01:16:10  -Enum
+01:19:30 ⭐Colecciones
+01:25:30  -Mapas
+01:27:50  -Implementacion de Enum
+01:38:10 -Clase Abstractas
