@@ -22,5 +22,5 @@ mediante un Diagrama de Clases.
 * Codificar la solución (lenguaje a elección o pseudo-código)
 
 ![diagrama uml](./recursos/uml.JPG)
-
+![Youtube](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sirchandler.com.ar%2F2018%2F07%2F20-000-suscriptores-en-youtube-y-el-cambio-que-vi-en-la-plataforma%2F&psig=AOvVaw16dHDZ74IylkDBJW5Xx-yP&ust=1698983241022000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLj4_fazpIIDFQAAAAAdAAAAABAE)
 [![Alt text](https://img.youtube.com/vi/8DCdDknVLrw/0.jpg)](https://www.youtube.com/watch?v=8DCdDknVLrw)
