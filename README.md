@@ -1,9 +1,10 @@
 # clase_01
 ## Repaso Java
-
 [Descarga documento](./recursos/ACT-Clase%201%20-%20Repaso%20Java.pdf)
 
 ## Validador de Inscripciones según Correlatividades
+
+![Caratula](./recursos/caratulas_java.jpg)
 
 Nos han solicitado el diseño y el desarrollo de un Validador de Inscripciones según materias
 correlativas.
